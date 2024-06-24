@@ -34,7 +34,7 @@ cd Insta-Snap
 1. **Navigate to the backend directory**:
 
     ```bash
-    cd Insta-Snap
+    cd Backend
     ```
 
 2. **Install backend dependencies**:
@@ -79,7 +79,7 @@ cd Insta-Snap
 1. **Navigate to the frontend directory**:
 
     ```bash
-    cd FRONTEND
+    cd FrontEnd
     ```
 
 2. **Install frontend dependencies**:

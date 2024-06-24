@@ -151,7 +151,5 @@ This project consists of a backend server and a frontend React application. The 
   - React
   - Axios
 
-## Contact
 
-For any issues or inquiries, please contact the project maintainer.
 

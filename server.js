@@ -3,16 +3,16 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = 5000;
 
-app.use(bodyParser.json());
 app.use(cors());
+app.use(bodyParser.json());
 
-// Example route
-app.get('/', (req, res) => {
-  res.send('Backend server is running!');
+// Define the /api/data endpoint
+app.get('/api/data', (req, res) => {
+  res.json({ message: 'Hello from the backend!' });
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });

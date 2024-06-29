@@ -1,0 +1,22 @@
+POST  http://localhost:5000/api/auth/login
+
+Content-type : application/json
+
+{
+    "email": "bob1@email.com",
+    "password": "KissUBaby"
+}
+
+
+###
+curl -X POST http://localhost:5000/api/auth/login -H "Content-Type: application/json" -d '{
+    "email": "sai@email.com",
+    "password": "sai"
+}'
+
+###
+curl -X GET http://localhost:5000/api/auth/refresh_token --cookie "refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjNGE3MTJlLTBkN2YtNDcxOS1hZjM1LTI1ZjI0NjUwMWE5OSIsInVzZXJuYW1lIjoic2FpIiwiZW1haWwiOiJzYWlAZW1haWwuY29tIiwiaWF0IjoxNzE5NjU1ODM4LCJleHAiOjE3MTk2NTY0Mzh9.AmoNqVleou8vEXwC4KmVROczpJnVB3YMuvypNh6NFjA"
+
+
+###
+curl -X GET http://localhost:5000/api/users -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjNGE3MTJlLTBkN2YtNDcxOS1hZjM1LTI1ZjI0NjUwMWE5OSIsInVzZXJuYW1lIjoic2FpIiwiZW1haWwiOiJzYWlAZW1haWwuY29tIiwiaWF0IjoxNzE5NjU1ODkwLCJleHAiOjE3MTk2NTU5NTB9.9CYcb_tYfbofNmSZEos3lAGfnveC4OtolICMX0wjAJg"

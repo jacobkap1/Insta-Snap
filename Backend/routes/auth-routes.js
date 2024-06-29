@@ -5,7 +5,6 @@ import jwt from 'jsonwebtoken';
 import { jwtTokens } from '../utils/jwt-helpers.js';
 
 const router = express.Router();
-
 // Login route
 router.post('/login', async (req, res) => {
   try {
@@ -31,7 +30,6 @@ router.post('/login', async (req, res) => {
     res.status(401).json({ error: error.message });
   }
 });
-
 // Refresh token route
 router.get('/refresh_token', (req, res) => {
   try {
@@ -48,7 +46,6 @@ router.get('/refresh_token', (req, res) => {
     res.status(401).json({ error: error.message });
   }
 });
-
 // Delete refresh token route
 router.delete('/refresh_token', (req, res) => {
   try {
@@ -58,5 +55,4 @@ router.delete('/refresh_token', (req, res) => {
     res.status(401).json({ error: error.message });
   }
 });
-
 export default router;

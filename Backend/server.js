@@ -10,7 +10,8 @@ import models from './models/index.js'; // Import Sequelize models
 
 dotenv.config(); // Load environment variables from .env file
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 

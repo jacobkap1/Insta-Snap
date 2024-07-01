@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #37383a;
 }
 
 .App-logo {
@@ -14,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: #37383a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,15 +42,11 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(
-  rgba(255, 255, 255, 0.7),
-  rgba(255, 255, 255, 0.3)
-
-),
-url("https://www.rawpixel.com/search/gradient?page=1&path=_topics&sort=curated");
-background-size: cover;
-background-position: center;
+  background: url("../public/image.png");
+  background-size: cover;
+  background-position: center;
 }
+
 
 form{
   background-color: white;

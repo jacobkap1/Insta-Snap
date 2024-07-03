@@ -101,13 +101,11 @@ function App() {
     </div>
   );
 }
-  return (
+ 
 <div> 
 <LoginForm />
 
 </div>
-
-  )
 
 
 

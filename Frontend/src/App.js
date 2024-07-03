@@ -101,12 +101,6 @@ function App() {
     </div>
   );
 }
- 
-<div> 
-<LoginForm />
-
-</div>
-
 
 
 export default App;

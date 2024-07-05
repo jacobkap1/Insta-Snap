@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #37383a;
 }
 
 .App-logo {
@@ -14,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: #37383a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +36,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("../public/image.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+form{
+  background-color: white;
+  padding: 0px 60px;
+  border-radius: 10px;
+
+}
+h1{
+color: rgb(255, 123, 0);
+text-align: center
+
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 30px;
+
 }
